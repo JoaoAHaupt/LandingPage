@@ -1,0 +1,142 @@
+:root{
+    --gap: 3rem;
+    --dark-red: #A94438;
+    --white-bege:#E4DEBE;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5;
+}
+
+h1, h2, h3, h4,h5,h6{
+    font-family: 'MedievalSharp', cursive;
+}
+h1{
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+h2{
+    font-size: 5.5rem;
+}
+h3{
+    font-size: 5rem;
+}
+h4{
+    font-size: 4.5rem;
+}
+h5{
+    font-size: 4rem;
+}
+h6{
+    font-size: 3.5rem;
+}
+
+p::selection{
+    background-color: black;
+    color: rgb(227, 85, 8);
+}
+
+
+.main-bg{
+    font-family:'OpenSans',sans-serif;
+    font-size: 1.6rem;
+    background-image: url("/assets/img/confetti-doodles.svg");
+    background-size: cover;
+    background-position: center;
+}
+
+.menu-content{
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: var(--gap);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.section{
+    min-height: 100vh;
+}
+
+.menu {
+    background: var(--dark-red);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    box-shadow: 0.0625rem 0.2rem 1rem var(--dark-red);
+}
+
+.menu h1{
+    font-size: 1.8rem;
+    color: var(--white-bege);
+}
+
+.menu h1 a{
+    color: inherit;
+    font-size: 3rem;
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+    
+}
+.menu ul li a{
+    display: block;
+    padding: 2rem;
+    font-size: 1.8rem;
+    color: var(--white-bege);
+    font-weight: bold;
+    font-family: 'MedievalSharp', cursive;
+    position: relative;
+}
+
+.menu ul li a::after{
+    content: '';
+    position: absolute;
+    bottom: 1.3rem;
+    left: 50%;
+    width: 0%;
+    height: 0.2rem;
+    background: var(--white-bege);
+    transition: all 300ms ease-in-out;
+}
+
+.menu ul li a:hover::after{
+    width: 50%;
+    left: 25%;
+}
+
+.menu-spacing{
+    height: 120px;
+}
+
+.intro-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:var(--gap);
+    align-items: center;
+}
+
+.intro-img img{
+    height: 50rem;
+}
+
+
+
+
+
