@@ -10,12 +10,14 @@
 
 }
 
+
 a{
     text-decoration: none;
 }
 
 html{
     font-size: 62.5;
+    scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4,h5,h6{
@@ -68,6 +70,7 @@ p::selection{
 
 .section{
     min-height: 100vh;
+
 }
 
 .menu {
@@ -78,6 +81,8 @@ p::selection{
     right: 0;
     width: 100%;
     box-shadow: 0.0625rem 0.2rem 1rem var(--dark-red);
+    z-index: 1;
+
 }
 
 .menu h1{
@@ -122,21 +127,80 @@ p::selection{
 }
 
 .menu-spacing{
-    height: 120px;
+    height: 97px;
 }
 
 .intro-content{
+    position: relative;
+    top: -7rem;
+    padding: var(--gap);
+    color: var(--white-bege);
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.5fr;
     gap:var(--gap);
-    align-items: center;
+    min-height: 100vh;
+}
+
+.intro-text-content, .intro-img{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
 }
 
 .intro-img img{
-    height: 50rem;
+    max-width: 100%;
+
+
 }
 
 
+.intro-text-content h2{
+    font-size: 6rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.section{
+    background-color: var(--white-bege);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top3-content{
+    max-width: 65rem;
+    flex-flow: column wrap;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.top3-content h2,p{
+    margin-bottom: 3rem;
+}
+
+#grid-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-one-content{
+    height: 100vh;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: center;
+    color: var(--white-bege);
+    max-width: 60rem;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:var(--gap);
+}
 
 
 
