@@ -46,6 +46,28 @@ h6{
 p::selection{
     background-color: black;
     color: rgb(227, 85, 8);
+
+}
+
+.responsive-table{
+    width: 100%;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+table{
+    width: 100%;
+
+}
+
+table td, table th, table caption{
+    padding: 0.5rem;
+    border: 0.1rem solid var(--dark-red);
+}
+
+table caption{
+    font-weight: bold;
+    background-color: #ec958c;
 }
 
 
@@ -202,5 +224,32 @@ p::selection{
     gap:var(--gap);
 }
 
+.gallery-img{
+    width: 100%;
+    max-width: 36rem;
+    max-height: 36rem;
+    overflow: hidden;
+}
 
+.gallery-img img{
+    transition: all 300ms ease-in-out;
+    filter: blur(2px);
+    border-radius: 120%;
+    height: 15rem;
+}
 
+.gallery-img img:hover{
+    filter: blur(0px);
+    border-radius: 20%;
+
+    transform:translate(-3%,3%) scale(1.2) rotate(5deg);
+}
+
+#gallery-h1{
+    color: black;
+}
+
+#gallery-h3{
+    color: black;
+
+}
